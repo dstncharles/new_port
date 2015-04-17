@@ -1,3 +1,12 @@
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.4em; }
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: normal; }
+
 header {
   height: 500px;
   background-color: #212D40; }
@@ -6,12 +15,43 @@ header {
   width: 500px;
   margin: 0 auto;
   color: white;
-  text-align: center;
-  font-family: 'Roboto', sans-serif; }
+  text-align: center; }
 
 .logo {
+  margin: 0 auto;
+  padding-top: 30px;
   height: 200px;
   width: 200px; }
+
+.ghost {
+  /* position centered */
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 38.3%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(0%) translateY(50%);
+  /* text styles */
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  /* modify text */
+  text-decoration: none;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  /* add a border */
+  border: 0.12em solid #fff;
+  padding: 0.2em 0.3em;
+  /* animate the change */
+  -webkit-transition: color 300ms, background 500ms, border-color 700ms;
+  transition: color 300ms, background 500ms, border-color 700ms; }
+
+.ghost:hover {
+  background: #F1592B;
+  border-color: #F1592B;
+  color: #212D40; }
 
 .about {
   height: 200px;
