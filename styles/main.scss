@@ -1,13 +1,13 @@
-h1 {
+.header-words h1 {
   font-family: 'Raleway', sans-serif;
-font-size: 2.4em;
+  font-size: 2.4em;
 }
 
 
-h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 28px;
-    font-weight: normal
+.header-words h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: normal
 }
 
 header {
@@ -34,7 +34,7 @@ header {
   display:inline-block;
   position: relative;
   top: 50%;
-  left: 38.3%;
+  left: 33%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(0%) translateY(50%);
@@ -63,16 +63,19 @@ header {
 
 .about {
   height: 200px;
-  background-color: #D1D1D1;
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(33,45,64,0.8);
-  -moz-box-shadow: 0px 0px 5px 1px rgba(33,45,64,0.8);
-  box-shadow: 0px 0px 5px 1px rgba(33,45,64,0.8);
 }
+
+.about h1 {
+  font-size: 45px;
+  text-align: center;
+}
+
 
 .work {
   height: 200px;
-  background-color: #D1D1D1;
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(33,45,64,0.8);
-  -moz-box-shadow: 0px 0px 5px 1px rgba(33,45,64,0.8);
-  box-shadow: 0px 0px 5px 1px rgba(33,45,64,0.8);
+}
+
+.work h1 {
+  font-size: 45px;
+  text-align: center;
 }
