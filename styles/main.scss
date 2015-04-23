@@ -72,18 +72,14 @@ header {
   color: #212D40;
 }
 
-.about, .work {
+.about, .work, .skills {
   height: 200px;
 }
 
-.about h1, .work h1 {
-  font-size: 45px;
+.about h1, .work h1, .skills h1 {
   text-align: center;
   color: #212D40;
-}
-
-.work {
-  height: 200px;
+  font-size: 45px;
 }
 
 p {
@@ -91,3 +87,30 @@ p {
   padding-right: 75px;
   color: #212D40;
 }
+
+footer {
+  height: 300px;
+  background-color: #212D40;
+}
+
+#wrap a {
+  display:inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 60px;
+  color: #212D40;
+  background-color: #fff;
+  }
+
+a .fa {
+  font-size: 37px;
+  margin:auto;
+  height:100%;
+  width:100%;
+  line-height:60px
+  }
+
+#wrap a:hover {
+  background-color: #F1592B;
+  }
