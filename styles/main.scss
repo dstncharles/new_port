@@ -1,46 +1,38 @@
 * {
-   margin: 0;
+  margin: 0;
 }
-
 img {
   margin-top: 15px;
 }
-
 .header-words h1 {
   margin-top: 50px;
   font-family: 'Raleway', sans-serif;
   font-size: 2.4em;
 }
-
-
 .header-words h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 28px;
-  font-weight: normal
+  font-weight: normal;
 }
-
 header {
   height: 500px;
-  background-color: #212D40;
+  background-color: #212d40;
 }
-
 .header-words {
   width: 500px;
   margin: 0 auto;
   color: white;
-  text-align: center
+  text-align: center;
 }
-
 .logo {
   margin: 0 auto;
   padding-top: 30px;
   height: 200px;
   width: 200px;
 }
-
 .ghost {
   /* position centered */
-  display:inline-block;
+  display: inline-block;
   position: relative;
   top: 50%;
   left: 32%;
@@ -51,11 +43,11 @@ header {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.2em;
   letter-spacing: 0.1em;
-  color:#ffffff;
+  color: #fff;
   /* modify text */
-  text-decoration:none;
-  text-transform:uppercase;
-  text-rendering:optimizeLegibility;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
   /* add a border */
   border: 0.12em solid #fff;
   padding: 0.2em 0.3em;
@@ -65,78 +57,82 @@ header {
   width: 95px;
   text-align: center;
 }
-
 .ghost:hover {
-  background: #F1592B;
-  border-color: #F1592B;
-  color: #212D40;
+  background: #f1592b;
+  border-color: #f1592b;
+  color: #212d40;
 }
-
-.about, .work, .skills {
+.about,
+.work,
+.skills {
   height: 200px;
 }
-
-.about h1, .work h1, .skills h1 {
+.about h1,
+.work h1,
+.skills h1 {
   text-align: center;
-  color: #212D40;
+  color: #212d40;
   font-size: 45px;
 }
-
 p {
   padding-left: 75px;
   padding-right: 75px;
-  color: #212D40;
+  color: #212d40;
 }
-
 footer {
   height: 300px;
-  background-color: #212D40;
+  background-color: #212d40;
 }
-
-footer, h1, h2 {
-  padding-top: 20px;
+footer,
+h1,
+h2 {
+  padding: 20px;
   text-align: center;
   color: white;
 }
-
 #wrap a {
   display: inline-block;
   width: 60px;
   height: 60px;
   text-align: center;
   border-radius: 60px;
-  color: #212D40;
+  color: #212d40;
   background-color: #fff;
-  }
-
+}
 a .fa {
   font-size: 37px;
-  margin:auto;
-  height:100%;
-  width:100%;
-  line-height:60px
-  }
-
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  line-height: 60px;
+}
 #wrap a:hover {
-  background-color: #F1592B;
-  }
-
+  background-color: #f1592b;
+}
 .social-icon {
   text-align: center;
   padding-top: 30px;
 }
-
 .personal-info {
   font-family: 'Raleway', sans-serif;
 }
-
 .personal-info a {
   color: white;
   font-size: 20px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
 }
-
 .personal-info a:hover {
-  color: #F1592B;
+  color: #f1592b;
+}
+.personal-info p {
+  color: white;
+}
+.phone-email a {
+  display: inline-block;
+}
+
+.random-p {
+  display: inline-block;
+  padding: 1px
 }

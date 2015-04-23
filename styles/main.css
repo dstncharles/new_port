@@ -16,7 +16,7 @@ img {
 
 header {
   height: 500px;
-  background-color: #212D40; }
+  background-color: #212d40; }
 
 .header-words {
   width: 500px;
@@ -43,7 +43,7 @@ header {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.2em;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: #fff;
   /* modify text */
   text-decoration: none;
   text-transform: uppercase;
@@ -58,29 +58,35 @@ header {
   text-align: center; }
 
 .ghost:hover {
-  background: #F1592B;
-  border-color: #F1592B;
-  color: #212D40; }
+  background: #f1592b;
+  border-color: #f1592b;
+  color: #212d40; }
 
-.about, .work, .skills {
+.about,
+.work,
+.skills {
   height: 200px; }
 
-.about h1, .work h1, .skills h1 {
+.about h1,
+.work h1,
+.skills h1 {
   text-align: center;
-  color: #212D40;
+  color: #212d40;
   font-size: 45px; }
 
 p {
   padding-left: 75px;
   padding-right: 75px;
-  color: #212D40; }
+  color: #212d40; }
 
 footer {
   height: 300px;
-  background-color: #212D40; }
+  background-color: #212d40; }
 
-footer, h1, h2 {
-  padding-top: 20px;
+footer,
+h1,
+h2 {
+  padding: 20px;
   text-align: center;
   color: white; }
 
@@ -90,7 +96,7 @@ footer, h1, h2 {
   height: 60px;
   text-align: center;
   border-radius: 60px;
-  color: #212D40;
+  color: #212d40;
   background-color: #fff; }
 
 a .fa {
@@ -101,7 +107,7 @@ a .fa {
   line-height: 60px; }
 
 #wrap a:hover {
-  background-color: #F1592B; }
+  background-color: #f1592b; }
 
 .social-icon {
   text-align: center;
@@ -117,6 +123,16 @@ a .fa {
   font-family: 'Raleway', sans-serif; }
 
 .personal-info a:hover {
-  color: #F1592B; }
+  color: #f1592b; }
+
+.personal-info p {
+  color: white; }
+
+.phone-email a {
+  display: inline-block; }
+
+.random-p {
+  display: inline-block;
+  padding: 1px; }
 
 /*# sourceMappingURL=main.css.map */
