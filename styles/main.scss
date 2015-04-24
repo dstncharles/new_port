@@ -1,35 +1,42 @@
 * {
   margin: 0;
 }
+
 img {
   margin-top: 15px;
 }
+
 .header-words h1 {
-  margin-top: 50px;
+  margin-top: 54px;
   font-family: 'Raleway', sans-serif;
   font-size: 2.4em;
 }
+
 .header-words h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 28px;
   font-weight: normal;
 }
+
 header {
   height: 500px;
   background-color: #212d40;
 }
+
 .header-words {
   width: 500px;
   margin: 0 auto;
   color: white;
   text-align: center;
 }
+
 .logo {
   margin: 0 auto;
   padding-top: 30px;
   height: 200px;
   width: 200px;
 }
+
 .ghost {
   /* position centered */
   display: inline-block;
@@ -57,16 +64,19 @@ header {
   width: 95px;
   text-align: center;
 }
+
 .ghost:hover {
   background: #f1592b;
   border-color: #f1592b;
   color: #212d40;
 }
+
 .about,
 .work,
 .skills {
   height: 200px;
 }
+
 .about h1,
 .work h1,
 .skills h1 {
@@ -74,22 +84,31 @@ header {
   color: #212d40;
   font-size: 45px;
 }
+
 p {
   padding-left: 75px;
   padding-right: 75px;
   color: #212d40;
 }
+
 footer {
   height: 300px;
   background-color: #212d40;
 }
-footer,
-h1,
-h2 {
-  padding: 20px;
+
+footer h1 {
+  padding: 32px;
   text-align: center;
   color: white;
 }
+
+footer h2 {
+  padding: 32px;
+  text-align: center;
+  color: white;
+}
+
+
 #wrap a {
   display: inline-block;
   width: 60px;
@@ -99,6 +118,7 @@ h2 {
   color: #212d40;
   background-color: #fff;
 }
+
 a .fa {
   font-size: 37px;
   margin: auto;
@@ -106,33 +126,44 @@ a .fa {
   width: 100%;
   line-height: 60px;
 }
+
 #wrap a:hover {
   background-color: #f1592b;
 }
+
 .social-icon {
   text-align: center;
   padding-top: 30px;
 }
+
 .personal-info {
   font-family: 'Raleway', sans-serif;
 }
+
 .personal-info a {
   color: white;
   font-size: 20px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
 }
+
 .personal-info a:hover {
   color: #f1592b;
 }
+
 .personal-info p {
   color: white;
 }
+
+.phone-email {
+  text-align: center;
+}
+
 .phone-email a {
   display: inline-block;
 }
 
 .random-p {
   display: inline-block;
-  padding: 1px
+  padding: 1px;
 }
