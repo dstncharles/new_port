@@ -94,8 +94,8 @@ header {
 }
 
 .ghost:hover {
-  background: #f1592b;
-  border-color: #f1592b;
+  background: $orange-red;
+  border-color: $orange-red;
   color: $tangaroa-blue;
 }
 
@@ -132,8 +132,8 @@ p {
 }
 
 .work-ghost:hover {
-  background: #f1592b;
-  border-color: #f1592b;
+  background: $orange-red;
+  border-color: $orange-red;
   color: $tangaroa-blue;
 }
 
@@ -174,7 +174,7 @@ a .fa {
 }
 
 #wrap a:hover {
-  background-color: #f1592b;
+  background-color: $orange-red;
 }
 
 .social-icon {
@@ -194,7 +194,7 @@ a .fa {
 }
 
 .personal-info a:hover {
-  color: #f1592b;
+  color: $orange-red;
 }
 
 .personal-info p {
