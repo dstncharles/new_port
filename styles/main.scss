@@ -1,3 +1,51 @@
+$tangaroa-blue: #212d40;
+$primary-color: $tangaroa-blue;
+
+$orange-red: #fe4214;
+$secondary-color: $orange-red;
+
+/* $open-sans: 'Open Sans', sans-serif;
+$primary-font: open-sans;
+
+$oswald: 'Oswald', sans-serif;
+$secondary-font: oswald; */
+
+@mixin ghost-button-position {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 32%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(0%) translateY(50%);
+}
+
+@mixin ghost-button-text-styles {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+@mixin ghost-button-modify-text {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+}
+
+@mixin ghost-button-border {
+  border: 0.12em solid #fff;
+  padding: 0.2em 0.3em;
+}
+
+@mixin ghost-button-animate {
+  -webkit-transition: color 300ms, background 500ms, border-color 700ms;
+  transition: color 300ms, background 500ms, border-color 700ms;
+  width: 95px;
+  text-align: center;
+  text-decoration: none;
+}
+
 * {
   margin: 0;
 }
@@ -20,7 +68,7 @@ img {
 
 header {
   height: 500px;
-  background-color: #212d40;
+  background-color: $tangaroa-blue;
 }
 
 .header-words {
@@ -38,37 +86,17 @@ header {
 }
 
 .ghost {
-  /* position centered */
-  display: inline-block;
-  position: relative;
-  top: 50%;
-  left: 32%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(0%) translateY(50%);
-  /* text styles */
-  font-family: Tahoma, Verdana, Segoe, sans-serif;
-  font-size: 1.2em;
-  letter-spacing: 0.1em;
-  color: #fff;
-  /* modify text */
-  text-decoration: none;
-  text-transform: uppercase;
-  text-rendering: optimizeLegibility;
-  /* add a border */
-  border: 0.12em solid #fff;
-  padding: 0.2em 0.3em;
-  /* animate the change */
-  -webkit-transition: color 300ms, background 500ms, border-color 700ms;
-  transition: color 300ms, background 500ms, border-color 700ms;
-  width: 95px;
-  text-align: center;
+  @include ghost-button-position;
+  @include ghost-button-text-styles;
+  @include ghost-button-modify-text;
+  @include ghost-button-border;
+  @include ghost-button-animate;
 }
 
 .ghost:hover {
   background: #f1592b;
   border-color: #f1592b;
-  color: #212d40;
+  color: $tangaroa-blue;
 }
 
 .about,
@@ -81,20 +109,37 @@ header {
 .work h1,
 .skills h1 {
   text-align: center;
-  color: #212d40;
+  color: $tangaroa-blue;
   font-size: 45px;
 }
 
 p {
   padding-left: 180px;
   padding-right: 180px;
-  color: #212d40;
+  color: $tangaroa-blue;
   font-size: 25px;
+}
+
+.work-ghost {
+  @include ghost-button-position;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  color: $tangaroa-blue;
+  border: 0.12em solid $tangaroa-blue;
+  padding: 0.2em 0.3em;
+  @include ghost-button-animate;
+}
+
+.work-ghost:hover {
+  background: #f1592b;
+  border-color: #f1592b;
+  color: $tangaroa-blue;
 }
 
 footer {
   height: 300px;
-  background-color: #212d40;
+  background-color: $tangaroa-blue;
 }
 
 footer h1 {
@@ -116,7 +161,7 @@ footer h2 {
   height: 60px;
   text-align: center;
   border-radius: 60px;
-  color: #212d40;
+  color: $tangaroa-blue;
   background-color: #fff;
 }
 

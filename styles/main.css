@@ -1,3 +1,8 @@
+/* $open-sans: 'Open Sans', sans-serif;
+$primary-font: open-sans;
+
+$oswald: 'Oswald', sans-serif;
+$secondary-font: oswald; */
 * {
   margin: 0; }
 
@@ -31,7 +36,6 @@ header {
   width: 200px; }
 
 .ghost {
-  /* position centered */
   display: inline-block;
   position: relative;
   top: 50%;
@@ -39,23 +43,20 @@ header {
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(0%) translateY(50%);
-  /* text styles */
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.2em;
   letter-spacing: 0.1em;
   color: #fff;
-  /* modify text */
   text-decoration: none;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
-  /* add a border */
   border: 0.12em solid #fff;
   padding: 0.2em 0.3em;
-  /* animate the change */
   -webkit-transition: color 300ms, background 500ms, border-color 700ms;
   transition: color 300ms, background 500ms, border-color 700ms;
   width: 95px;
-  text-align: center; }
+  text-align: center;
+  text-decoration: none; }
 
 .ghost:hover {
   background: #f1592b;
@@ -79,6 +80,31 @@ p {
   padding-right: 180px;
   color: #212d40;
   font-size: 25px; }
+
+.work-ghost {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 32%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(0%) translateY(50%);
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  color: #212d40;
+  border: 0.12em solid #212d40;
+  padding: 0.2em 0.3em;
+  -webkit-transition: color 300ms, background 500ms, border-color 700ms;
+  transition: color 300ms, background 500ms, border-color 700ms;
+  width: 95px;
+  text-align: center;
+  text-decoration: none; }
+
+.work-ghost:hover {
+  background: #f1592b;
+  border-color: #f1592b;
+  color: #212d40; }
 
 footer {
   height: 300px;
