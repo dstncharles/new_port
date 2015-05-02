@@ -86,6 +86,8 @@ header {
   width: 200px;
 }
 
+///header buttons///
+
 .ghost {
   @include ghost-button-position;
   @include ghost-button-text-styles;
@@ -124,6 +126,8 @@ p {
 .work {
   width: 100%;
 }
+
+///work section///
 
 .surf-nav {
   width: 33%;
