@@ -50,6 +50,7 @@ $secondary-font: oswald; */
   margin: 0;
 }
 
+///header///
 img {
   margin-top: 15px;
 }
@@ -99,6 +100,7 @@ header {
   color: $tangaroa-blue;
 }
 
+///middle section///
 .about,
 .work,
 .skills {
@@ -119,9 +121,32 @@ p {
   color: $tangaroa-blue;
   font-size: 25px;
 }
+.work {
+  width: 100%;
+}
+
+.surf-nav {
+  width: 33%;
+  border: 0.12em solid red;
+}
+
+.cal-nav {
+  width: 33%;
+  border: 0.12em solid red;
+}
+
+.benchmark-nav {
+  width: 33%;
+  border: 0.12em solid red;
+}
 
 .work-ghost {
-  @include ghost-button-position;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(0%) translateY(50%);
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.2em;
   letter-spacing: 0.1em;
@@ -137,6 +162,7 @@ p {
   color: $tangaroa-blue;
 }
 
+///footer///
 footer {
   height: 300px;
   background-color: $tangaroa-blue;
