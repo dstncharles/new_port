@@ -65,22 +65,18 @@ $secondary-font: oswald; */
 ///header///
 header {
   @include span-columns(12);
-  height: 500px;
+  height: 32em;
   background-color: $tangaroa-blue;
 }
 
 .logo {
-  margin: 0 auto;
-  padding-top: 30px;
-  height: 200px;
-  width: 200px;
+  @include outer-container;
+  @include span-columns(2);
+  @include shift(5);
+  padding-top: 4em;
 }
 
-img {
-  margin-top: 15px;
-}
-
-.header-words h1 {
+/* .header-words h1 {
   margin-top: 54px;
   font-size: 2.4em;
 }
@@ -95,7 +91,7 @@ img {
   margin: 0 auto;
   color: white;
   text-align: center;
-}
+} */
 
 ///header buttons///
 
@@ -112,7 +108,7 @@ img {
   border-color: $orange-red;
   color: $tangaroa-blue;
 }
-
+ */
 ///middle section///
 /* .about,
 .work,
@@ -193,6 +189,7 @@ p {
 
 .skills-logos {
   @include span-columns(2);
+  @include omega();
 }
 
 ///footer///
