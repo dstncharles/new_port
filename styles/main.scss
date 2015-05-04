@@ -76,22 +76,23 @@ header {
   padding-top: 4em;
 }
 
-/* .header-words h1 {
-  margin-top: 54px;
-  font-size: 2.4em;
+.header-words {
+  @include outer-container;
+  @include span-columns(4);
+  @include shift(4);
+  color: white;
+  text-align: center;
+}
+
+.header-words h1 {
+  font-size: 3.4em;
+  margin-top: 0.4em;
 }
 
 .header-words h2 {
-  font-size: 28px;
-  font-weight: normal;
+  font-size: 2em;
+  font-weight: 100;
 }
-
-.header-words {
-  width: 500px;
-  margin: 0 auto;
-  color: white;
-  text-align: center;
-} */
 
 ///header buttons///
 
@@ -108,7 +109,7 @@ header {
   border-color: $orange-red;
   color: $tangaroa-blue;
 }
- */
+
 ///middle section///
 /* .about,
 .work,

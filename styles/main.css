@@ -1,66 +1,297 @@
-/*
-Error: Invalid CSS after "*\/": expected identifier, was "///middle secti..."
-        on line 111 of main.scss
+html {
+  box-sizing: border-box; }
 
-106: .ghost:hover {
-107:   background: $orange-red;
-108:   border-color: $orange-red;
-109:   color: $tangaroa-blue;
-110: }
-111:  *\/
-112: ///middle section///
-113: /* .about,
-114: .work,
-115: .skills {
-116:   height: 200px;
+*, *::after, *::before {
+  box-sizing: inherit; }
 
-Backtrace:
-main.scss:111
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1165:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1101:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1081:in `expr!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/static_parser.rb:145:in `reference_combinator'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/static_parser.rb:139:in `combinator'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/static_parser.rb:119:in `selector'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/static_parser.rb:86:in `selector_comma_sequence'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1079:in `expr!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/static_parser.rb:20:in `parse_selector'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:424:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
 body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"*/\": expected identifier, was \"///middle secti...\"\A         on line 111 of main.scss\A \A 106: .ghost:hover {\A 107:   background: $orange-red;\A 108:   border-color: $orange-red;\A 109:   color: $tangaroa-blue;\A 110: }\A 111:  */\A 112: ///middle section///\A 113: /* .about,\A 114: .work,\A 115: .skills {\A 116:   height: 200px;"; }
+  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
+  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
+  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
+  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
+  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1; }
+
+/* $large: new-breakpoint(min-width 841px);
+$tablet: new-breakpoint(min-width 501px max-width 840px 8);
+$mobile: new-breakpoint(max-width 500px 4); */
+/* $Raleway: 'Raleway', sans-serif;
+$primary-font: Raleway;
+
+$oswald: 'Oswald', sans-serif;
+$secondary-font: oswald; */
+* {
+  margin: 0; }
+
+header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: 32em;
+  background-color: #212d40; }
+  header:last-child {
+    margin-right: 0; }
+
+.logo {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  margin-left: 42.64902%;
+  padding-top: 4em; }
+  .logo::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .logo:last-child {
+    margin-right: 0; }
+
+.header-words {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 34.11922%;
+  color: white;
+  text-align: center; }
+  .header-words::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .header-words:last-child {
+    margin-right: 0; }
+
+.header-words h1 {
+  font-size: 3.4em;
+  margin-top: 0.4em; }
+
+.header-words h2 {
+  font-size: 2em;
+  font-weight: 100; }
+
+.ghost {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 32%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(0%) translateY(50%);
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  border: 0.12em solid #fff;
+  padding: 0.2em 0.3em;
+  -webkit-transition: color 300ms, background 500ms, border-color 700ms;
+  transition: color 300ms, background 500ms, border-color 700ms;
+  width: 95px;
+  text-align: center;
+  text-decoration: none; }
+
+.ghost:hover {
+  background: #fe4214;
+  border-color: #fe4214;
+  color: #212d40; }
+
+/* .about,
+.work,
+.skills {
+  height: 200px;
+}
+
+.about h1,
+.work h1,
+.skills h1 {
+  text-align: center;
+  color: $tangaroa-blue;
+  font-size: 45px;
+}
+
+p {
+  padding-left: 180px;
+  padding-right: 180px;
+  color: $tangaroa-blue;
+  font-size: 25px;
+} */
+.about {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .about::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.work {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 350px;
+  text-align: center; }
+  .work::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.surf-nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  border: 0.12em solid red; }
+  .surf-nav:last-child {
+    margin-right: 0; }
+
+.cal-nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  border: 0.12em solid red; }
+  .cal-nav:last-child {
+    margin-right: 0; }
+
+.benchmark-nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  border: 0.12em solid red; }
+  .benchmark-nav:last-child {
+    margin-right: 0; }
+
+.work-ghost {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(0%) translateY(50%);
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  color: #212d40;
+  border: 0.12em solid #212d40;
+  padding: 0.2em 0.3em;
+  -webkit-transition: color 300ms, background 500ms, border-color 700ms;
+  transition: color 300ms, background 500ms, border-color 700ms;
+  width: 95px;
+  text-align: center;
+  text-decoration: none; }
+
+.work-ghost:hover {
+  background: #fe4214;
+  border-color: #fe4214;
+  color: #212d40; }
+
+.skills {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .skills::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.skills-logos {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  margin-right: 0; }
+  .skills-logos:last-child {
+    margin-right: 0; }
+
+footer {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: 370px;
+  background-color: #212d40; }
+  footer:last-child {
+    margin-right: 0; }
+
+footer h1 {
+  padding: 32px;
+  text-align: center;
+  color: white; }
+
+footer h2 {
+  padding: 32px;
+  text-align: center;
+  color: white; }
+
+#wrap a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 60px;
+  color: #212d40;
+  background-color: #fff; }
+
+a .fa {
+  font-size: 37px;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  line-height: 60px; }
+
+#wrap a:hover {
+  background-color: #fe4214; }
+
+.social-icon {
+  text-align: center;
+  padding-top: 30px; }
+
+.personal-info {
+  font-family: 'Raleway', sans-serif; }
+
+.personal-info a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif; }
+
+.personal-info a:hover {
+  color: #fe4214; }
+
+.personal-info p {
+  color: white; }
+
+.phone-email {
+  text-align: center; }
+
+.phone-email a {
+  display: inline-block; }
+
+.random-p {
+  display: inline-block;
+  padding: 1px; }
+
+/*# sourceMappingURL=main.css.map */
