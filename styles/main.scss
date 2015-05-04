@@ -16,8 +16,8 @@ $primary-color: $tangaroa-blue;
 $orange-red: #fe4214;
 $secondary-color: $orange-red;
 
-/* $open-sans: 'Open Sans', sans-serif;
-$primary-font: open-sans;
+/* $Raleway: 'Raleway', sans-serif;
+$primary-font: Raleway;
 
 $oswald: 'Oswald', sans-serif;
 $secondary-font: oswald; */
@@ -63,32 +63,10 @@ $secondary-font: oswald; */
 }
 
 ///header///
-img {
-  margin-top: 15px;
-}
-
-.header-words h1 {
-  margin-top: 54px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 2.4em;
-}
-
-.header-words h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 28px;
-  font-weight: normal;
-}
-
 header {
+  @include span-columns(12);
   height: 500px;
   background-color: $tangaroa-blue;
-}
-
-.header-words {
-  width: 500px;
-  margin: 0 auto;
-  color: white;
-  text-align: center;
 }
 
 .logo {
@@ -96,6 +74,27 @@ header {
   padding-top: 30px;
   height: 200px;
   width: 200px;
+}
+
+img {
+  margin-top: 15px;
+}
+
+.header-words h1 {
+  margin-top: 54px;
+  font-size: 2.4em;
+}
+
+.header-words h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.header-words {
+  width: 500px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
 }
 
 ///header buttons///
@@ -115,7 +114,7 @@ header {
 }
 
 ///middle section///
-.about,
+/* .about,
 .work,
 .skills {
   height: 200px;
@@ -134,13 +133,21 @@ p {
   padding-right: 180px;
   color: $tangaroa-blue;
   font-size: 25px;
-}
-.work {
+} */
+
+///about section///
+.about {
   @include outer-container;
-  width: 100%;
+  text-align: center;
 }
 
 ///work section///
+.work {
+  @include outer-container;
+  height: 350px;
+  text-align: center;
+}
+
 .surf-nav {
   @include span-columns(4);
   border: 0.12em solid red;
@@ -178,9 +185,20 @@ p {
   color: $tangaroa-blue;
 }
 
+///skills section///
+.skills {
+  @include outer-container;
+  text-align: center;
+}
+
+.skills-logos {
+  @include span-columns(2);
+}
+
 ///footer///
 footer {
-  height: 300px;
+  @include span-columns(12);
+  height: 370px;
   background-color: $tangaroa-blue;
 }
 

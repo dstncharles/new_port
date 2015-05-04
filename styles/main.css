@@ -26,42 +26,46 @@ body:before {
 /* $large: new-breakpoint(min-width 841px);
 $tablet: new-breakpoint(min-width 501px max-width 840px 8);
 $mobile: new-breakpoint(max-width 500px 4); */
-/* $open-sans: 'Open Sans', sans-serif;
-$primary-font: open-sans;
+/* $Raleway: 'Raleway', sans-serif;
+$primary-font: Raleway;
 
 $oswald: 'Oswald', sans-serif;
 $secondary-font: oswald; */
 * {
   margin: 0; }
 
-img {
-  margin-top: 15px; }
-
-.header-words h1 {
-  margin-top: 54px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 2.4em; }
-
-.header-words h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 28px;
-  font-weight: normal; }
-
 header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
   height: 500px;
   background-color: #212d40; }
-
-.header-words {
-  width: 500px;
-  margin: 0 auto;
-  color: white;
-  text-align: center; }
+  header:last-child {
+    margin-right: 0; }
 
 .logo {
   margin: 0 auto;
   padding-top: 30px;
   height: 200px;
   width: 200px; }
+
+img {
+  margin-top: 15px; }
+
+.header-words h1 {
+  margin-top: 54px;
+  font-size: 2.4em; }
+
+.header-words h2 {
+  font-size: 28px;
+  font-weight: normal; }
+
+.header-words {
+  width: 500px;
+  margin: 0 auto;
+  color: white;
+  text-align: center; }
 
 .ghost {
   display: inline-block;
@@ -91,29 +95,42 @@ header {
   border-color: #fe4214;
   color: #212d40; }
 
-.about,
+/* .about,
 .work,
 .skills {
-  height: 200px; }
+  height: 200px;
+}
 
 .about h1,
 .work h1,
 .skills h1 {
   text-align: center;
-  color: #212d40;
-  font-size: 45px; }
+  color: $tangaroa-blue;
+  font-size: 45px;
+}
 
 p {
   padding-left: 180px;
   padding-right: 180px;
-  color: #212d40;
-  font-size: 25px; }
+  color: $tangaroa-blue;
+  font-size: 25px;
+} */
+.about {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .about::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .work {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  width: 100%; }
+  height: 350px;
+  text-align: center; }
   .work::after {
     clear: both;
     content: "";
@@ -170,9 +187,33 @@ p {
   border-color: #fe4214;
   color: #212d40; }
 
+.skills {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .skills::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.skills-logos {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  .skills-logos:last-child {
+    margin-right: 0; }
+
 footer {
-  height: 300px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: 370px;
   background-color: #212d40; }
+  footer:last-child {
+    margin-right: 0; }
 
 footer h1 {
   padding: 32px;
