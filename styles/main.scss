@@ -1,3 +1,15 @@
+///Bourbon-Neat Settings///
+
+@import 'bourbon/bourbon';
+$visual-grid: true;
+@import 'neat/neat';
+
+/* $large: new-breakpoint(min-width 841px);
+$tablet: new-breakpoint(min-width 501px max-width 840px 8);
+$mobile: new-breakpoint(max-width 500px 4); */
+
+///////////////////////////
+
 $tangaroa-blue: #212d40;
 $primary-color: $tangaroa-blue;
 
@@ -124,23 +136,23 @@ p {
   font-size: 25px;
 }
 .work {
+  @include outer-container;
   width: 100%;
 }
 
 ///work section///
-
 .surf-nav {
-  width: 33%;
+  @include span-columns(4);
   border: 0.12em solid red;
 }
 
 .cal-nav {
-  width: 33%;
+  @include span-columns(4);
   border: 0.12em solid red;
 }
 
 .benchmark-nav {
-  width: 33%;
+  @include span-columns(4);
   border: 0.12em solid red;
 }
 
