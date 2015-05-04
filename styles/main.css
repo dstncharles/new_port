@@ -127,6 +127,7 @@ header {
   text-rendering: optimizeLegibility;
   border: 0.12em solid #fff;
   padding: 0.2em 0.3em;
+  width: 5.7em;
   -webkit-transition: color 300ms, background 500ms, border-color 700ms;
   transition: color 300ms, background 500ms, border-color 700ms;
   text-align: center;

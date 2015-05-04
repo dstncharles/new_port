@@ -53,6 +53,7 @@ $secondary-font: oswald; */
 @mixin ghost-button-border {
   border: 0.12em solid #fff;
   padding: 0.2em 0.3em;
+  width: 5.7em;
 }
 
 @mixin ghost-button-animate {
