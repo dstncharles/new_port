@@ -170,9 +170,10 @@ p {
   width: 14.70196%;
   margin-left: 42.64902%;
   display: inline-block;
+  text-align: center;
+  margin-top: 1.5em;
   font-family: Merriweather;
   font-size: 2.5em;
-  text-align: center;
   border: 0.12em solid red; }
   .about h1::after {
     clear: both;
@@ -218,6 +219,7 @@ p {
   margin-left: 42.64902%;
   display: inline-block;
   text-align: center;
+  margin-top: 1.5em;
   font-family: Merriweather;
   font-size: 2.5em;
   border: 0.12em solid red; }
