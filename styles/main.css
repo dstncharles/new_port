@@ -31,16 +31,6 @@ body:before {
 /* $large: new-breakpoint(min-width 841px);
 $tablet: new-breakpoint(min-width 501px max-width 840px 8);
 $mobile: new-breakpoint(max-width 500px 4); */
-/* $Raleway: 'Raleway', sans-serif;
-$primary-font: Raleway;
-
-$oswald: 'Oswald', sans-serif;
-$secondary-font: oswald; */
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 header {
   float: left;
   display: block;
@@ -87,12 +77,14 @@ header {
     margin-right: 0; }
 
 .header-words h1 {
-  font-size: 3.4em;
-  margin-top: 0.4em; }
+  font-size: 3.1em;
+  margin-top: 0.4em;
+  font-family: Merriweather; }
 
 .header-words h2 {
   font-size: 2em;
-  font-weight: 100; }
+  font-weight: 500;
+  font-family: Raleway; }
 
 .header-buttons {
   max-width: 68em;
@@ -162,8 +154,45 @@ p {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  text-align: center; }
+  border: 0.12em solid red; }
   .about::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.about h1 {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  margin-left: 42.64902%;
+  display: inline-block;
+  font-family: Merriweather;
+  font-size: 2.5em;
+  text-align: center;
+  border: 0.12em solid red; }
+  .about h1::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .about h1:last-child {
+    margin-right: 0; }
+
+.about p {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  font-family: Raleway;
+  font-size: 1.5em;
+  font-weight: 600;
+  height: 8em;
+  text-align: justify;
+  border: 0.12em solid red; }
+  .about p::after {
     clear: both;
     content: "";
     display: table; }
