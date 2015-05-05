@@ -201,12 +201,32 @@ p {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  height: 350px;
-  text-align: center; }
+  border: 0.12em solid red; }
   .work::after {
     clear: both;
     content: "";
     display: table; }
+
+.work h1 {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  margin-left: 42.64902%;
+  display: inline-block;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 2.5em;
+  border: 0.12em solid red; }
+  .work h1::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .work h1:last-child {
+    margin-right: 0; }
 
 .surf-nav {
   float: left;
