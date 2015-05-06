@@ -153,8 +153,7 @@ p {
 .about {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto;
-  border: 0.12em solid red; }
+  margin-right: auto; }
   .about::after {
     clear: both;
     content: "";
@@ -172,9 +171,9 @@ p {
   display: inline-block;
   text-align: center;
   margin-top: 1.5em;
+  margin-bottom: .75em;
   font-family: Merriweather;
-  font-size: 2.5em;
-  border: 0.12em solid red; }
+  font-size: 2.5em; }
   .about h1::after {
     clear: both;
     content: "";
@@ -191,8 +190,7 @@ p {
   font-size: 1.5em;
   font-weight: 600;
   height: 8em;
-  text-align: justify;
-  border: 0.12em solid red; }
+  text-align: justify; }
   .about p::after {
     clear: both;
     content: "";
@@ -201,8 +199,7 @@ p {
 .work {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto;
-  border: 0.12em solid red; }
+  margin-right: auto; }
   .work::after {
     clear: both;
     content: "";
@@ -215,14 +212,13 @@ p {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 14.70196%;
-  margin-left: 42.64902%;
+  width: 100%;
   display: inline-block;
   text-align: center;
   margin-top: 1.5em;
+  margin-bottom: .75em;
   font-family: Merriweather;
-  font-size: 2.5em;
-  border: 0.12em solid red; }
+  font-size: 2.5em; }
   .work h1::after {
     clear: both;
     content: "";
@@ -230,46 +226,66 @@ p {
   .work h1:last-child {
     margin-right: 0; }
 
-.surf-nav {
+.project-box {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .project-box::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.surf-nav, .calc-nav, .benchmark-nav {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%;
-  border: 0.12em solid red; }
-  .surf-nav:last-child {
+  width: 31.76157%; }
+  .surf-nav::after, .calc-nav::after, .benchmark-nav::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .surf-nav:last-child, .calc-nav:last-child, .benchmark-nav:last-child {
     margin-right: 0; }
 
-.cal-nav {
+.surf-screen, .cal-screen, .benchmark-screen {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  border: 0.12em solid red; }
-  .cal-nav:last-child {
+  width: 100%; }
+  .surf-screen:last-child, .cal-screen:last-child, .benchmark-screen:last-child {
     margin-right: 0; }
 
-.benchmark-nav {
+.surf-button, .calc-button, .benchmark-button {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  border: 0.12em solid red; }
-  .benchmark-nav:last-child {
+  display: inline-block;
+  width: 100%;
+  margin-top: .5em;
+  text-align: center; }
+  .surf-button:last-child, .calc-button:last-child, .benchmark-button:last-child {
     margin-right: 0; }
 
 .work-ghost {
   display: inline-block;
   position: relative;
   top: 50%;
+  width: 4em;
+  margin: .2em;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(0%) translateY(50%);
+  transform: translateX(0%) translateY(0%);
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.2em;
   letter-spacing: 0.1em;
   color: #212d40;
   border: 0.12em solid #212d40;
-  padding: 0.2em 0.3em;
+  padding: 0.3em 0.4em;
   -webkit-transition: color 300ms, background 500ms, border-color 700ms;
   transition: color 300ms, background 500ms, border-color 700ms;
   text-align: center;

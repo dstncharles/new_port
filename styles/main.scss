@@ -146,7 +146,7 @@ p {
 ///about section///
 .about {
   @include outer-container;
-  border: 0.12em solid red;
+
 }
 
 .about h1 {
@@ -156,9 +156,10 @@ p {
   display: inline-block;
   text-align: center;
   margin-top: 1.5em;
+  margin-bottom: .75em;
   font-family: $primary-font;
   font-size: 2.5em;
-  border: 0.12em solid red;
+
 }
 
 .about p {
@@ -169,55 +170,67 @@ p {
   font-weight: 600;
   height: 8em;
   text-align: justify;
-  border: 0.12em solid red;
+
 }
 
 ///work section///
 .work {
   @include outer-container;
-  border: 0.12em solid red;
+
 }
 
 .work h1 {
   @include outer-container;
-  @include span-columns(2);
-  @include shift(5);
+  @include span-columns(12);
   display: inline-block;
   text-align: center;
   margin-top: 1.5em;
+  margin-bottom: .75em;
   font-family: $primary-font;
   font-size: 2.5em;
-  border: 0.12em solid red;
+
 }
 
-.surf-nav {
-  @include span-columns(4);
-  border: 0.12em solid red;
+.project-box {
+  @include outer-container;
 }
 
-.cal-nav {
+.surf-nav, .calc-nav, .benchmark-nav {
+  @include outer-container;
   @include span-columns(4);
-  border: 0.12em solid red;
+
 }
 
-.benchmark-nav {
+.surf-screen, .cal-screen, .benchmark-screen {
   @include span-columns(4);
-  border: 0.12em solid red;
+  width: 100%;
+
+}
+
+.surf-button, .calc-button, .benchmark-button {
+  @include span-columns(4);
+  display: inline-block;
+  width: 100%;
+  margin-top: .5em;
+  text-align: center;
+
 }
 
 .work-ghost {
   display: inline-block;
   position: relative;
   top: 50%;
+  width: 4em;
+  margin: .2em;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(0%) translateY(50%);
+  transform: translateX(0%) translateY(0%);
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.2em;
   letter-spacing: 0.1em;
   color: $tangaroa-blue;
   border: 0.12em solid $tangaroa-blue;
-  padding: 0.2em 0.3em;
+  padding: 0.3em 0.4em;;
   @include ghost-button-animate;
 }
 
@@ -226,6 +239,7 @@ p {
   border-color: $orange-red;
   color: $tangaroa-blue;
 }
+
 
 ///skills section///
 .skills {
