@@ -1,7 +1,7 @@
 ///Bourbon-Neat Settings///
 
 @import 'bourbon/bourbon';
-/* $visual-grid: true; */
+$visual-grid: true;
 @import 'neat/neat';
 
 *, *::before, *::after {
@@ -10,11 +10,11 @@
   box-sizing: border-box;
 }
 
-/* $large: new-breakpoint(min-width 841px);
-$tablet: new-breakpoint(min-width 501px max-width 840px 8);
-$mobile: new-breakpoint(max-width 500px 4); */
+$large: new-breakpoint(min-width 841px);
+$tablet: new-breakpoint(min-width 501px max-width 840px  8);
+$mobile: new-breakpoint(max-width 500px 4);
 
-///////////////////////////
+///////Colors & Font/////////
 
 $tangaroa-blue: #212d40;
 $primary-color: $tangaroa-blue;
@@ -28,6 +28,8 @@ $primary-font: Merriweather;
 $Raleway: 'Raleway', sans-serif;
 $secondary-font: Raleway;
 
+//////////Mixins/////////
+
 @mixin ghost-button-position {
   display: inline-block;
   position: relative;
@@ -38,9 +40,8 @@ $secondary-font: Raleway;
 }
 
 @mixin ghost-button-text-styles {
-  font-family: Tahoma, Verdana, Segoe, sans-serif;
-  font-size: 1.1em;
-  letter-spacing: 0.1em;
+  font-family: $secondary-font;
+  font-size: 1em;
   color: #fff;
 }
 
@@ -64,47 +65,57 @@ $secondary-font: Raleway;
 }
 
 
-///header///
+
+/////header/////
 header {
   @include span-columns(12);
   height: 32em;
-  background-color: $tangaroa-blue;
+  background-color: $primary-color;
+  // @include media($large)
 }
 
-.logo {
-  @include outer-container;
-  @include span-columns(2);
-  @include shift(5);
-  padding-top: 4em;
+img {
+  height: 15em;
+  width: 15em;
 }
 
-.header-words {
-  @include outer-container;
-  @include span-columns(4);
-  @include shift(4);
-  color: white;
-  text-align: center;
-}
+// .logo {
+//   @include span-columns(2);
+//   @include shift(5);
+//   padding-top: 5%;
+//   // @include media($large)
+// }
+
+// .header-words {
+//   color: white;
+//   text-align: center;
+//   // @include media($large)
+// }
 
 .header-words h1 {
+  color: white;
+  text-align: center;
   font-size: 3.1em;
   margin-top: 0.4em;
   font-family: $primary-font;
+  // @include media($large)
 }
 
 .header-words h2 {
+  color: white;
+  text-align: center;
   font-size: 2em;
   font-weight: 500;
   font-family: $secondary-font;
+  // @include media($large)
 }
 
 
 ///header buttons///
 .header-buttons {
-  @include outer-container;
-  @include span-columns(4);
-  @include shift(4);
+  @include span-columns(12);
   text-align: center;
+  // @include media($large)
 }
 
 .ghost {
@@ -113,12 +124,14 @@ header {
   @include ghost-button-modify-text;
   @include ghost-button-border;
   @include ghost-button-animate;
+  // @include media($large)
 }
 
 .ghost:hover {
   background: $orange-red;
   border-color: $orange-red;
-  color: $tangaroa-blue;
+  color: $primary-color;
+  // @include media($large)
 }
 
 ///about section///
@@ -202,8 +215,8 @@ header {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.2em;
   letter-spacing: 0.1em;
-  color: $tangaroa-blue;
-  border: 0.12em solid $tangaroa-blue;
+  color: $primary-color;;
+  border: 0.12em solid $primary-color;;
   padding: 0.3em 0.4em;;
   @include ghost-button-animate;
 }
@@ -211,7 +224,7 @@ header {
 .work-ghost:hover {
   background: $orange-red;
   border-color: $orange-red;
-  color: $tangaroa-blue;
+  color: $primary-color;;
 }
 
 
@@ -266,8 +279,8 @@ dl dd {
 ///footer///
 footer {
   @include span-columns(12);
-  height: 370px;
-  background-color: $tangaroa-blue;
+  height: 26em;
+  background-color: $primary-color;;
 }
 
 footer h1 {
@@ -276,20 +289,18 @@ footer h1 {
   color: white;
 }
 
-footer h2 {
+footer  {
   padding: 32px;
   text-align: center;
   color: white;
 }
-
-
 #wrap a {
   display: inline-block;
   width: 60px;
   height: 60px;
   text-align: center;
   border-radius: 60px;
-  color: $tangaroa-blue;
+  color: $primary-color;;
   background-color: #fff;
 }
 
@@ -311,14 +322,14 @@ a .fa {
 }
 
 .personal-info {
-  font-family: 'Raleway', sans-serif;
+  font-family: $primary-font;
 }
 
 .personal-info a {
   color: white;
   font-size: 20px;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: $primary-font;
 }
 
 .personal-info a:hover {
