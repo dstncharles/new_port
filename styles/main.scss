@@ -130,11 +130,6 @@ img {
 }
 
 ///about section///
-.about {
-  @include outer-container;
-
-}
-
 .about h1 {
   @include outer-container;
   @include span-columns(2);
@@ -148,8 +143,9 @@ img {
 }
 
 .about p {
-  @include outer-container;
   display: inline-block;
+  margin-left: 8%;
+  margin-right: 8%;
   font-family: $secondary-font;
   font-size: 1.5em;
   font-weight: 600;
@@ -159,11 +155,6 @@ img {
 }
 
 ///work section///
-.work {
-  @include outer-container;
-
-}
-
 .work h1 {
   @include outer-container;
   @include span-columns(12);
@@ -177,7 +168,8 @@ img {
 }
 
 .project-box {
-  @include outer-container;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .surf-nav, .calc-nav, .benchmark-nav {

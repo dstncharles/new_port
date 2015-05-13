@@ -98,15 +98,6 @@ img {
   border-color: #fe4214;
   color: #212d40; }
 
-.about {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .about::after {
-    clear: both;
-    content: "";
-    display: table; }
-
 .about h1 {
   max-width: 68em;
   margin-left: auto;
@@ -129,28 +120,14 @@ img {
     margin-right: 0; }
 
 .about p {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   display: inline-block;
+  margin-left: 8%;
+  margin-right: 8%;
   font-family: Raleway;
   font-size: 1.5em;
   font-weight: 600;
   margin-top: 1em;
   text-align: justify; }
-  .about p::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-.work {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .work::after {
-    clear: both;
-    content: "";
-    display: table; }
 
 .work h1 {
   max-width: 68em;
@@ -174,13 +151,8 @@ img {
     margin-right: 0; }
 
 .project-box {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .project-box::after {
-    clear: both;
-    content: "";
-    display: table; }
+  margin-left: 8%;
+  margin-right: 8%; }
 
 .surf-nav, .calc-nav, .benchmark-nav {
   max-width: 68em;
