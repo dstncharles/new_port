@@ -64,7 +64,7 @@ $secondary-font: Raleway;
 /////header/////
 header {
   @include span-columns(12);
-  height: 32em;
+  height: 34em;
   background-color: $primary-color;
   // @include media($large)
 }
