@@ -102,11 +102,11 @@ img {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 14.70196%;
-  margin-left: 42.64902%;
+  width: 100%;
   display: inline-block;
   text-align: center;
   margin-top: 1.8em;
+  margin-bottom: 1em;
   font-family: Merriweather;
   font-size: 2.5em; }
   .about h1::after {
