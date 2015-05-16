@@ -23,10 +23,29 @@ body:before {
   width: 100%;
   z-index: -1; }
 
-*, *::before, *::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+h1 {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 2.5em; }
+  h1::after {
+    clear: both;
+    content: "";
+    display: table; }
+  h1:last-child {
+    margin-right: 0; }
 
 header {
   float: left;
@@ -96,25 +115,8 @@ img {
   color: #212d40; }
 
 .about h1 {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  display: inline-block;
-  text-align: center;
   margin-top: 1.8em;
-  margin-bottom: 1em;
-  font-family: Merriweather;
-  font-size: 2.5em; }
-  .about h1::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .about h1:last-child {
-    margin-right: 0; }
+  margin-bottom: 1em; }
 
 .about p {
   display: inline-block;
@@ -127,25 +129,8 @@ img {
   text-align: justify; }
 
 .work h1 {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  display: inline-block;
-  text-align: center;
   margin-top: 1.8em;
-  margin-bottom: 1em;
-  font-family: Merriweather;
-  font-size: 2.5em; }
-  .work h1::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .work h1:last-child {
-    margin-right: 0; }
+  margin-bottom: 1em; }
 
 .project-box {
   margin-left: 8%;
@@ -165,6 +150,14 @@ img {
     display: table; }
   .surf-nav:last-child, .calc-nav:last-child, .benchmark-nav:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 500px) {
+    .surf-nav, .calc-nav, .benchmark-nav {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .surf-nav:last-child, .calc-nav:last-child, .benchmark-nav:last-child {
+        margin-right: 0; } }
 
 .surf-screen, .cal-screen, .benchmark-screen {
   float: left;
@@ -174,6 +167,15 @@ img {
   width: 100%; }
   .surf-screen:last-child, .cal-screen:last-child, .benchmark-screen:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 500px) {
+    .surf-screen, .cal-screen, .benchmark-screen {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%;
+      width: 100%; }
+      .surf-screen:last-child, .cal-screen:last-child, .benchmark-screen:last-child {
+        margin-right: 0; } }
 
 .surf-button, .calc-button, .benchmark-button {
   float: left;
@@ -213,25 +215,8 @@ img {
   color: #212d40; }
 
 .skills h1 {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  display: inline-block;
-  text-align: center;
   margin-top: 1.8em;
-  margin-bottom: 1em;
-  font-family: Merriweather;
-  font-size: 2.5em; }
-  .skills h1::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .skills h1:last-child {
-    margin-right: 0; }
+  margin-bottom: 1em; }
 
 dl {
   max-width: 68em;
@@ -252,16 +237,9 @@ dl {
     margin-right: 0; }
   @media screen and (max-width: 500px) {
     dl {
-      float: left;
-      display: block;
-      margin-right: 7.42297%;
-      width: 100%;
-      margin-left: 2.68557%;
-      margin-left: 0%; }
-      dl:last-child {
-        margin-right: 0; } }
+      margin-left: 0; } }
 
-dl dt {
+dt {
   float: left;
   clear: both;
   width: 300px;
@@ -272,16 +250,12 @@ dl dt {
   font-size: 1.25em;
   font-family: Merriweather; }
   @media screen and (max-width: 500px) {
-    dl dt {
-      float: left;
-      display: block;
-      margin-right: 7.42297%;
-      width: 100%;
-      text-align: center; }
-      dl dt:last-child {
-        margin-right: 0; } }
+    dt {
+      width: 15em;
+      margin-left: 5%;
+      text-align: center; } }
 
-dl dd {
+dd {
   width: auto;
   float: left;
   padding: 5px 10px 5px 10px;
@@ -296,6 +270,11 @@ dl dd {
   font-size: 1.2em;
   font-family: Raleway;
   margin-bottom: .75em; }
+  @media screen and (max-width: 500px) {
+    dd {
+      margin-left: 45%;
+      width: 7em;
+      text-align: center; } }
 
 footer {
   float: left;
@@ -308,9 +287,8 @@ footer {
     margin-right: 0; }
 
 footer h1 {
-  padding: 32px;
-  text-align: center;
-  color: white; }
+  margin-top: 1.8em;
+  margin-bottom: 1em; }
 
 footer {
   padding: 32px;

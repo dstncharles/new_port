@@ -4,7 +4,7 @@
 $visual-grid: true;
 @import 'neat/neat';
 
-*, *::before, *::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,6 +27,16 @@ $primary-font: Merriweather;
 
 $Raleway: 'Raleway', sans-serif;
 $secondary-font: Raleway;
+
+//////Global CSS//////
+h1 {
+  @include outer-container;
+  @include span-columns(12);
+  display: inline-block;
+  text-align: center;
+  font-family: $primary-font;
+  font-size: 2.5em;
+}
 
 //////////Mixins/////////
 
@@ -66,7 +76,7 @@ header {
   @include span-columns(12);
   height: 34em;
   background-color: $primary-color;
-  // @include media($large)
+
 }
 
 img {
@@ -80,9 +90,8 @@ img {
   height: 18em;
   padding-top: 3.6em;
   margin: 0 auto;
-  // @include media($large)
-}
 
+}
 
 .header-words h1 {
   color: white;
@@ -90,7 +99,6 @@ img {
   font-size: 3.1em;
   margin-top: .5em;
   font-family: $primary-font;
-  // @include media($large)
 }
 
 .header-words h2 {
@@ -99,7 +107,7 @@ img {
   font-size: 2em;
   font-weight: 500;
   font-family: $secondary-font;
-  // @include media($large)
+// @include media($large)
 }
 
 
@@ -107,11 +115,9 @@ img {
 .header-buttons {
   @include span-columns(12);
   text-align: center;
+  @include media($mobile) {
 
-  // @include media($mobile) {
-  //   @include span-columns(2);
-  // }
-  // @include media($large)
+  }
 }
 
 .ghost {
@@ -132,14 +138,8 @@ img {
 
 ///about section///
 .about h1 {
-  @include outer-container;
-  @include span-columns(12);
-  display: inline-block;
-  text-align: center;
   margin-top: 1.8em;
   margin-bottom: 1em;
-  font-family: $primary-font;
-  font-size: 2.5em;
 }
 
 .about p {
@@ -151,19 +151,15 @@ img {
   font-weight: 600;
   margin-top: 1em;
   text-align: justify;
+  @include media($mobile) {
 
+  }
 }
 
 ///work section///
 .work h1 {
-  @include outer-container;
-  @include span-columns(12);
-  display: inline-block;
-  text-align: center;
   margin-top: 1.8em;
   margin-bottom: 1em;
-  font-family: $primary-font;
-  font-size: 2.5em;
 }
 
 .project-box {
@@ -174,11 +170,18 @@ img {
 .surf-nav, .calc-nav, .benchmark-nav {
   @include outer-container;
   @include span-columns(4);
+  @include media($mobile) {
+    @include span-columns(4);
+  }
 }
 
 .surf-screen, .cal-screen, .benchmark-screen {
   @include span-columns(4);
   width: 100%;
+  @include media($mobile) {
+    @include span-columns(4);
+    width: 100%;
+  }
 }
 
 .surf-button, .calc-button, .benchmark-button {
@@ -187,6 +190,9 @@ img {
   width: 100%;
   margin-top: .5em;
   text-align: center;
+  @include media($mobile) {
+
+  }
 }
 
 .work-ghost {
@@ -216,14 +222,8 @@ img {
 
 ///skills section///
 .skills h1 {
-  @include outer-container;
-  @include span-columns(12);
-  display: inline-block;
-  text-align: center;
   margin-top: 1.8em;
   margin-bottom: 1em;
-  font-family: $primary-font;
-  font-size: 2.5em;
 }
 
 dl {
@@ -233,13 +233,11 @@ dl {
   margin-left: 25%;
   margin-bottom: 1.8em;
   @include media($mobile) {
-    @include span-columns(4);
-    @include shift(.1);
-    margin-left: 0%;
+    margin-left: 0;
   }
 }
 
-dl dt {
+dt {
   float: left;
   clear: both;
   width: 300px;
@@ -250,12 +248,13 @@ dl dt {
   font-size: 1.25em;
   font-family: $primary-font;
   @include media($mobile) {
-    @include span-columns(4);
+    width: 15em;
+    margin-left: 5%;
     text-align: center;
   }
 }
 
-dl dd {
+dd {
   width: auto;
   float: left;
   padding: 5px 10px 5px 10px;
@@ -270,6 +269,11 @@ dl dd {
   font-size: 1.2em;
   font-family: $secondary-font;
   margin-bottom: .75em;
+  @include media($mobile) {
+    margin-left: 45%;
+    width: 7em;
+    text-align: center;
+  }
 }
 
 ///footer///
@@ -280,9 +284,8 @@ footer {
 }
 
 footer h1 {
-  padding: 32px;
-  text-align: center;
-  color: white;
+  margin-top: 1.8em;
+  margin-bottom: 1em;
 }
 
 footer  {
