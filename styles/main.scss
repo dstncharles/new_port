@@ -1,7 +1,7 @@
 ///Bourbon-Neat Settings///
 
 @import 'bourbon/bourbon';
-$visual-grid: true;
+// $visual-grid: true;
 @import 'neat/neat';
 
 * {
@@ -76,6 +76,9 @@ header {
   @include span-columns(12);
   height: 34em;
   background-color: $primary-color;
+  @include media($mobile) {
+    height: 38em;
+  }
 
 }
 
@@ -107,7 +110,6 @@ img {
   font-size: 2em;
   font-weight: 500;
   font-family: $secondary-font;
-// @include media($large)
 }
 
 
@@ -116,7 +118,8 @@ img {
   @include span-columns(12);
   text-align: center;
   @include media($mobile) {
-
+    @include span-columns(3);
+    margin-left: 12%;
   }
 }
 
@@ -126,14 +129,14 @@ img {
   @include ghost-button-modify-text;
   @include ghost-button-border;
   @include ghost-button-animate;
-  // @include media($large)
+
 }
 
 .ghost:hover {
   background: $orange-red;
   border-color: $orange-red;
   color: $primary-color;
-  // @include media($large)
+
 }
 
 ///about section///
