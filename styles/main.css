@@ -207,6 +207,13 @@ img {
   border-color: #fe4214;
   color: #212d40; }
 
+@media screen and (max-width: 500px) {
+  .skills {
+    text-align: -moz-center;
+    text-align: -o-center;
+    text-align: -webkit-center;
+    text-align: center; } }
+
 .skills h1 {
   margin-top: 1.8em;
   margin-bottom: 1em; }
@@ -230,7 +237,10 @@ dl {
     margin-right: 0; }
   @media screen and (max-width: 500px) {
     dl {
-      margin-left: 0; } }
+      width: auto;
+      margin-left: 0;
+      text-align: center;
+      float: none; } }
 
 dt {
   float: left;
@@ -244,9 +254,10 @@ dt {
   font-family: Merriweather; }
   @media screen and (max-width: 500px) {
     dt {
-      width: 15em;
-      margin-left: 5%;
-      text-align: center; } }
+      text-align: center;
+      float: none;
+      width: auto;
+      max-width: none; } }
 
 dd {
   width: auto;
@@ -265,9 +276,10 @@ dd {
   margin-bottom: .75em; }
   @media screen and (max-width: 500px) {
     dd {
-      margin-left: 45%;
+      float: none;
       width: 7em;
-      text-align: center; } }
+      display: -webkit-inline-box;
+      text-align: -webkit-center; } }
 
 footer {
   float: left;

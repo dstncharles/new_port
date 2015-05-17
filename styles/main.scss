@@ -220,6 +220,15 @@ img {
 
 
 ///skills section///
+.skills {
+  @include media($mobile) {
+    text-align: -moz-center;
+    text-align: -o-center;
+    text-align: -webkit-center;
+    text-align: center;
+  }
+}
+
 .skills h1 {
   margin-top: 1.8em;
   margin-bottom: 1em;
@@ -232,8 +241,10 @@ dl {
   margin-left: 25%;
   margin-bottom: 1.8em;
   @include media($mobile) {
-
+    width: auto;
     margin-left: 0;
+    text-align: center;
+    float: none;
   }
 }
 
@@ -248,9 +259,10 @@ dt {
   font-size: 1.25em;
   font-family: $primary-font;
   @include media($mobile) {
-    width: 15em;
-    margin-left: 5%;
     text-align: center;
+    float: none;
+    width: auto;
+    max-width: none;
   }
 }
 
@@ -270,9 +282,10 @@ dd {
   font-family: $secondary-font;
   margin-bottom: .75em;
   @include media($mobile) {
-    margin-left: 45%;
+    float: none;
     width: 7em;
-    text-align: center;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
   }
 }
 
