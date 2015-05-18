@@ -127,7 +127,10 @@ img {
   @include ghost-button-modify-text;
   @include ghost-button-border;
   @include ghost-button-animate;
-
+  @include media($mobile) {
+    margin-top: .8em;
+    width: 6.7em;
+  }
 }
 
 .ghost:hover {

@@ -101,6 +101,10 @@ img {
   transition: color 300ms, background 500ms, border-color 700ms;
   text-align: center;
   text-decoration: none; }
+  @media screen and (max-width: 500px) {
+    .ghost {
+      margin-top: .8em;
+      width: 6.7em; } }
 
 .ghost:hover {
   background: #fe4214;
