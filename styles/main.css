@@ -192,9 +192,6 @@ img {
   top: 50%;
   width: 4em;
   margin: .2em;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(0%) translateY(0%);
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.2em;
   letter-spacing: 0.1em;
